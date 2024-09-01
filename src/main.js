@@ -53,9 +53,9 @@ const App = defineComponent({
   },
   methods: {
     done(index) {
-      this.timerActive = false;
       clearInterval(this.intervalId);
-      alert(`${this.incompletedList[index].title}'s time has finished!`);
+
+      this.timerActive = false;
       this.completedList.push(this.incompletedList[index]);
       this.incompletedList.splice(index, 1);
     },
@@ -95,6 +95,7 @@ const App = defineComponent({
           const seconds = newValue[i].timer;
 
           if (seconds === 25) {
+            alert(`${newValue[i].title}'s time has finished!`);
             this.done(i);
           }
         }
