@@ -2,3 +2,5 @@
 
 # Vue Pomorodo
 A single application to track tasks.
+
+![image](https://github.com/user-attachments/assets/2671224d-24c8-4743-8c5d-f672ae4fc9e4)
